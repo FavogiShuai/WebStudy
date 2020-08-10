@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            background-color: #bfa;
+            border: 10px solid red;
+        }
+
+        .box2 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* clear 
+                作用：清除浮动对当前元素的影响
+
+             */
+            /* clear: left; */
+
+        }
+
+        .box1::after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+</body>
+
+</html>
