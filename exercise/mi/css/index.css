@@ -19,13 +19,22 @@
     color: white;
 }
 
+.download:hover .qrcode{
+    display: block;
+}
 .top-bar .line{
     font-size: 12px;
     margin: 0 8px;
     color: #424242;
 }
-.service .qrcode{
+.download{
     position: relative;
+}
+.service .qrcode{
+    display: none;
+    position: absolute;
+    left: -95%;
+    margin-left: 5px;
     width: 124px;
     height: 148px;
     line-height: 1px;
@@ -36,7 +45,8 @@
 .qrcode .arrow{
     position: absolute;
     top: -10px;
-    left: 20px;
+    left: 50%;
+    margin-left: -2.5px;
     width: 0;
     height: 0;
     border: 5px solid transparent;
@@ -50,7 +60,7 @@
 .qrcode span{
     margin-bottom: 5px;
     font-size: 14px;
-    
+    color: black;
 }
 .shop-cart,
 .user-info{
