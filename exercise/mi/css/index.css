@@ -20,7 +20,10 @@
 }
 
 .download:hover .qrcode{
-    display: block;
+    /* display: block; */
+    height: 148px;
+    overflow: visible;
+
 }
 .top-bar .line{
     font-size: 12px;
@@ -31,16 +34,18 @@
     position: relative;
 }
 .service .qrcode{
-    display: none;
+    /* display: none; */
     position: absolute;
     left: -95%;
     margin-left: 5px;
     width: 124px;
-    height: 148px;
     line-height: 1px;
     text-align: center;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
 }
 .qrcode .arrow{
     position: absolute;
